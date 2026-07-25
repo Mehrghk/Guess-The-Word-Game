@@ -27,7 +27,6 @@ function scrambleWord() {
     rendomizedWord.push(randomizedcharacter);
   }
   misplacedCharactersDiv.innerHTML = rendomizedWord.join('  ');
-  console.log(currentWord);
 }
 
 async function generateRandomWord() {
@@ -118,7 +117,6 @@ function handleInput() {
           Inputs.item(i).classList.remove("wrongchar")
           if(!currentWord.includes(currentValue[i])){
             Inputs.item(i).classList.add("wrongchar"); 
-            // console.log(first)
           }else{
             if(currentValue[i] !== savedScrambledWord[i]){
               if(!mistakes.includes(currentValue[i])){
