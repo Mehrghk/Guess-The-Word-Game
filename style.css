@@ -31,7 +31,7 @@ body {
     transition: all .5s;
 }
 img{
-    width: 200px;
+    width: 130px;
     align-self: center;
 }
 .card{
@@ -39,8 +39,8 @@ img{
     font-family: 'inter';
     border-radius: 13px;
     border: 1px solid #4D5562;
-    width: 550px; 
-    height: 45vh;
+    width: 450px; 
+    /* height: 45vh; */
 }
 .dot{
     height: 8px;
@@ -61,7 +61,7 @@ span{
 }
 .misplaced-characters{
     font-family: 'outfit';
-    font-size: 2rem;
+    font-size: 32px;
     align-content: center;
     height: 60px;
     background-color: var(--shatered-word-bg);
@@ -72,7 +72,7 @@ span{
 }
 input{
     font-family: 'outfit';
-    font-size: 1.25rem;
+    font-size: 15px;
     background-color: var(--card-bg);
     border: 2px solid var(--input-border);
     color: #E5E7EB;
@@ -111,8 +111,8 @@ button{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 8%;
-    height: 45vh;
+    padding: 10% 8%;
+    /* height: 45vh; */
     gap: 10px;
     text-align: center;
 }
@@ -162,13 +162,16 @@ footer{
         margin: 0 2px;
     } */
     .card{
-        height: 450px;
-        width: 400px;
+        height: 380px;
+        width: 320px;
     }
     .card-body{
         height: stretch;
     }
     span{
+        font-size: 15px;
+    }
+    input{
         font-size: 18px;
     }
 }
