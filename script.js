@@ -97,7 +97,7 @@ function handleInput() {
 
   if(currentValue.join("") === currentWord){
     setTimeout(()=>{
-      alert("🎉 Success! lets Try another word.")
+      alert(`🎉 Success! The Word was "${currentWord}"`)
       Inputs.forEach((input)=>{
         input.classList.remove("wrongchar");
       })

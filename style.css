@@ -30,17 +30,21 @@ body {
     align-items: center;
     transition: all .5s;
 }
+img{
+    width: 200px;
+    align-self: center;
+}
 .card{
     background-color: var(--card-bg);
     font-family: 'inter';
     border-radius: 13px;
     border: 1px solid #4D5562;
-    width: 450px; 
+    width: 550px; 
     height: 45vh;
 }
 .dot{
-    height: 10px;
-    width: 10px;
+    height: 8px;
+    width: 8px;
     background-color: var(--shatered-word-bg);
     border-radius: 50%;
     display: inline-block;
@@ -62,7 +66,7 @@ span{
     height: 60px;
     background-color: var(--shatered-word-bg);
     color: var(--text-color);
-    margin: 20px 0 10px 0;
+    margin: 20px 0 20px 0;
     border-radius: 5px;
     border-bottom: 3px solid var(--shatered-word-shadow);
 }
@@ -105,13 +109,15 @@ button{
 }
 .card-body{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
     padding: 8%;
     height: 45vh;
     gap: 10px;
     text-align: center;
+}
+.card-body > div:nth-child(1) {
+    width: 95%;
 }
 .card-body > div:nth-child(2) > div:nth-child(2){
     margin-top: 0;
@@ -129,6 +135,7 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .author-info {
     font-size: 14px;
@@ -146,4 +153,22 @@ button{
 footer{
     position: absolute;
     bottom: 30px;
+}
+/* @media (max-width:1100px) {
+    
+} */
+@media (max-width:560px) {
+    /* input{
+        margin: 0 2px;
+    } */
+    .card{
+        height: 450px;
+        width: 400px;
+    }
+    .card-body{
+        height: stretch;
+    }
+    span{
+        font-size: 18px;
+    }
 }
