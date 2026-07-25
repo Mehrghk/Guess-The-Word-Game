@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="fav/1.png" type="image/x-icon" sizes="96x96" />
+    <link rel="stylesheet" href="style.css">
+    <title>Guess The Word Game | devChallenges.io</title>
+</head>
+<body>
+    <section>
+        <div class="card">
+            <div class="card-body" style="font-size: 16px;">
+                <img src="resources/word-scramblle-logo.svg" alt="card-logo">
+                <div>
+                    <div class="misplaced-characters"></div>
+                    <div>
+                        <span class="Tries">
+                            <span>Tries(<span class="userTries">0</span>/5): </span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </span>
+
+                        <span>Mistakes: 
+                            <span class="mistakes"></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="inputs" oninput={handleInput()}>
+                    <!-- <input type="text" class="char-box" maxlength="1" autofocus > -->
+                </div>
+                <div>
+                    <button class="" id="randomButton">Random</button> 
+                    <button class="" id="resetButton">Reset</button> 
+                </div>
+            </div>
+        </div>
+         
+    </section>
+    <footer>
+        <div class="author-info">
+            Coded by <a href="https://github.com/Mehrghk">Mehrshad</a> | Challenge by
+            <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+            >devChallenges.io</a
+            >.
+        </div>
+    </footer> 
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'outfit';
+    src: url('Outfit/Outfit-VariableFont_wght.ttf');
+}
+:root{
+    --text-color: #F2F5F9;
+    --bt-color: #C951E7;
+    --input-border: #97A3B6;
+    --input-focus: #672171;
+    --input-wrong-char-focus: #b92020;
+    --shatered-word-shadow: #030616;
+    --shatered-word-bg: #4A5567;
+    --dot-color-on: #7429C6;
+    --card-bg: #171E30;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh; 
+    background-image: url('resources/bg-guess-the-word.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: all .5s;
+}
+.card{
+    background-color: var(--card-bg);
+    font-family: 'inter';
+    border-radius: 13px;
+    border: 1px solid #4D5562;
+    width: 450px; 
+    height: 45vh;
+}
+.dot{
+    height: 10px;
+    width: 10px;
+    background-color: var(--shatered-word-bg);
+    border-radius: 50%;
+    display: inline-block;
+}
+.dott{
+    background-color: var(--dot-color-on);
+}
+span{
+    color: var(--text-color);
+    font-family: 'outfit';
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 1%;
+}
+.misplaced-characters{
+    font-family: 'outfit';
+    font-size: 2rem;
+    align-content: center;
+    height: 60px;
+    background-color: var(--shatered-word-bg);
+    color: var(--text-color);
+    margin: 20px 0 10px 0;
+    border-radius: 5px;
+    border-bottom: 3px solid var(--shatered-word-shadow);
+}
+input{
+    font-family: 'outfit';
+    font-size: 1.25rem;
+    background-color: var(--card-bg);
+    border: 2px solid var(--input-border);
+    color: #E5E7EB;
+    margin-top: 2%;
+    border-radius: 8px;
+    padding: 2px 2px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin: 0 5px;
+}
+input:focus{
+    border: 2px solid var(--input-focus);
+    outline: 0;
+}
+input.wrongchar{
+    border: 2px solid var(--input-wrong-char-focus);
+    outline: 0;
+}
+button{
+    border: none;
+    border-radius: 8px;
+    border-bottom: 4px solid var(--input-focus);
+    background-color: var(--bt-color);
+    color: var(--text-color);
+    font-family: 'outfit';
+    font-size: 16px;
+    padding: 2% 9%;
+    cursor: pointer;
+}
+.button-clicked{
+    translate: translateY(4px);
+    border-bottom: 0;
+}
+.card-body{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 8%;
+    height: 45vh;
+    gap: 10px;
+    text-align: center;
+}
+.card-body > div:nth-child(2) > div:nth-child(2){
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.card-body > div:nth-child(4){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.card-body > div:nth-child(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.author-info {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 16px;
+    color: var(--text-color);
+    a {
+    text-decoration: none;
+    color: var(--shatered-word-shadow);
+        &:hover {
+            color: #292a2f;
+        }
+    }
+}
+footer{
+    position: absolute;
+    bottom: 30px;
+}
